@@ -27,7 +27,7 @@ namespace SmartApi
         {
             services.AddEntityFrameworkSqlServer();
             services.AddControllers();
-            services.AddMvc();
+            services.AddMvc(options => options.EnableEndpointRouting = false);
             services.AddSingleton<ITodoRepository, TodoRepository>();
         }
 
