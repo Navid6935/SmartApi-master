@@ -18,5 +18,19 @@ namespace SmartApi.Models
         }
 
         public DbSet<SmartApi.Models.Users> Users { get; set; }
+
+        public DbSet<SmartApi.Models.AppDevices> AppDevices { get; set; }
+
+        public DbSet<SmartApi.Models.AppUpdate> AppUpdate { get; set; }
+
+        public DbSet<SmartApi.Models.appusers> appusers { get; set; }
+
+        public DbSet<SmartApi.Models.Category> Category { get; set; }
+
+        public DbSet<SmartApi.Models.Operator> Operator { get; set; }
+
+        public DbSet<SmartApi.Models.StoredSerials> StoredSerials { get; set; }
+
+        public DbSet<SmartApi.Models.EsSerialActive> EsSerialActive { get; set; }
     }
 }
